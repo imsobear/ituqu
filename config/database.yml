@@ -19,11 +19,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: tuqu_production
+  adapter: sqlite3
+  database: db/tuqu.sqlite3
   pool: 5
-  username: root
-  password: '123'
-  socket: /var/run/mysqld/mysqld.sock
+  timeout: 5000
