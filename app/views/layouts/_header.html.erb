@@ -1,0 +1,19 @@
+<header class="navbar navbar-fixed-top header">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to root_path, class: "brand" do %>
+      <i class='icon-home'></i> | 途 趣 <small>beta</small>
+      <% end %>
+      <ul class="nav">
+        <li><%= link_to '分享', new_journal_path %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to '关于我', current_user %></li>
+        <li><%= link_to '退出', destroy_user_session_path, :method => :delete %></li>
+        <% else %>
+        <li><%= link_to('登录', new_user_session_path) %></li>
+        <li><%= link_to('注册', new_user_registration_path) %></li> 
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</header>

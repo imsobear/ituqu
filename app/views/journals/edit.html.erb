@@ -1,0 +1,12 @@
+<% provide(:title, "途趣网 || #{user.username}'s journal") %>
+<div id='write_journal' class="row">
+	<div id='write_content' class="span8">
+		<%= render 'journals/form' %>
+	</div>
+	<div id='upload_picture' class="span4">
+		<%= render 'pictures/form' %>
+		<% for pic in @pics %>
+		<%= image_tag pic.image.url %>
+		<% end %>
+	</div>
+</div>

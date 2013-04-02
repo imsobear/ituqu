@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.fileupload-ui
+ *= require_tree .
+ */
+
+ body{
+ 	padding-top: 85px;
+ 	font-family: sans-serif !important;
+ 	font-size: 14px;
+ 	background-color: #EFEFEE !important;
+ }
+ label{
+ 	display: inline !important;
+ }
+ ul, li{
+ 	list-style: none;
+ }
+ a{
+ 	text-decoration: none;
+ }
+ a:hover{
+ 	color: #4bc3c1 !important;
+ 	text-decoration: none !important;
+ }
+ 
+ /*header*/
+ header .navbar-inner{
+ 	height: 40px;
+ 	padding: 20px;
+ 	background-image: none;
+ 	border-bottom: 1px solid #ECECEC;
+ 	.brand{
+ 		font: 30px bold !important;
+ 		padding: 0 20px;
+ 	}
+ 	.nav{
+ 		left:100px;
+ 		li{
+ 			font-size: 18px;
+ 			letter-spacing: 3px;
+ 			margin-left:30px;
+ 		}
+ 	}
+ }
+
+ footer{
+ 	margin-top: 20px;
+ 	height:100px;
+ 	border-top: 4px solid #F74716;
+ 	background-color:#2A2A2A;
+ 	color:white;
+ 	padding:50px 200px;
+ 	li{
+ 		margin-top: 10px;
+ 		a{
+ 			color: white;
+ 		}
+ 	}
+ }
+
+ .title, .title a{
+ 	color: #E1704B;
+ 	font-size: 1.5em;
+ 	font-weight: normal;
+ }
+ #container{
+ 	height: auto;
+ }

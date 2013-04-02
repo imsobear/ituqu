@@ -1,0 +1,15 @@
+<% provide(:title, "途趣网 || New journal") %>
+<div id='write_journal' class="row">
+	<div id='write_content' class="span8">
+		<%= render 'journals/form' %>
+	</div>
+	<div id='upload_picture' class="span4">
+		<%= render 'pictures/form' %>
+	</div>
+</div>
+
+<script>
+$(function(){
+		$(".journal_form").validate();
+})
+</script>

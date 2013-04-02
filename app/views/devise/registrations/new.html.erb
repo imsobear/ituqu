@@ -1,0 +1,31 @@
+<div class="sign">
+	<h2>注册</h2>
+
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+	<%= devise_error_messages! %>
+	<div>
+		<%= f.label '用户名：' %>
+		<%= f.text_field :username, :autofocus => true %>
+	</div>
+	<div>
+		<%= f.label '邮箱：' %>
+		<%= f.email_field :email %>
+	</div>
+
+	<div>
+		<%= f.label '密码：' %>
+		<%= f.password_field :password %>
+	</div>
+
+	<div>
+		<%= f.label '密码确认：' %>
+		<%= f.password_field :password_confirmation %>
+	</div>
+
+	<div><%= f.submit "注册", class: "btn btn-primary btn-large" %></div>
+	<% end %>
+
+	<%= render "devise/shared/links" %>
+
+</div>
+

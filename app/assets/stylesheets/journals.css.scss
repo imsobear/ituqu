@@ -1,0 +1,76 @@
+/* home/index*/
+.journals{
+	margin:0;
+	overflow: hidden;
+	.journal_part{
+		background-color: white;
+		padding: 30px;
+		margin: 20px;	
+		#journal_picture{
+		}
+		#journal_content{
+			margin-left:50px;
+			.title{
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+}
+
+
+/*journal#show*/
+
+.journal_all{
+	margin: 20px;
+	#journal_content{
+		background-color:white;
+		padding:30px;
+	}
+	img{
+		margin: 0 10px 20px 10px;;
+	}
+}
+
+/*journal#new&edit*/
+#write_journal{
+	margin:20px;
+	.fileinput-button{
+		margin: 20px 120px;
+		font-size: 2em;
+		line-height: 30px;
+		color: #E1704B;
+	}
+	#upload_picture{
+		background-color:white;
+	}
+	#write_content{
+		background-color:white;
+		text-align: center;
+		.journal_title{
+			border: none;
+			font-size: 30px;
+			line-height: 30px;
+			width:600px;
+			height: 60px;
+			margin: 20px auto;
+			text-align: center;
+			display: block;
+		}
+		.journal_text{
+			width: 600px;
+			height: 300px;
+			display: block;
+			margin: 0 auto;
+			padding:20px;
+			font-size: 24px;
+			line-height: 1.5;
+		}
+		.journal_action{
+			margin-top: 20px;
+			.btn{
+				width: 300px;
+			}
+		}
+	}
+}

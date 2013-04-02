@@ -1,0 +1,22 @@
+<% provide(:title, "途趣网 || #{user.username}'s journal") %>
+<div class='row journal_all'>
+	<div id="journal_pictures" class='span4'>
+		<% for pic in @pictures %>
+		<%= image_tag pic.image.url %>
+		<% end %>
+	</div>
+	<div id="journal_content" class='span8 offet4'>
+		<h1 class="title"><%= link_to @journal.title, @journal %></h1>
+		<div class="info">
+			<% user = User.find(@journal.user_id) %>
+			<%= @journal.updated_at %> by 
+			<%= link_to user.username, user %>
+			<% if current_user and current_user.has_role? :admin, @journal %>
+			<%= link_to "编辑", edit_journal_path(@journal) %>
+			<%= link_to '删除', journal_path(@journal), method: :delete %>
+			<% end %>
+		</div>
+		<hr>
+		<p class="content"><%= raw @journal.content %></p>
+	</div>
+</div>
