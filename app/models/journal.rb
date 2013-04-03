@@ -21,7 +21,7 @@ class Journal < ActiveRecord::Base
 	# validates :title, presence: true, 
 	# 					length: {minimum: 1, message: "标题至少有一个字"}
 	validates :content, presence: true, 
-						length: {minimum: 20, message: "Too short"}
+						length: {minimum: 5, message: "Too short"}
 
 
 	def generate_token

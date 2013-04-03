@@ -1,7 +1,17 @@
+
 .sign{
-	margin: 0 auto;
-	border: 1px solid;
-	width:500px;
+	margin: 50px auto;
+	width:400px;
+	height: 300px;
+	padding:50px;
+	text-align:center;
+	background-color:white;
+	p{
+		font-size: 18px;
+	}
+	form{
+		margin-top: 30px;
+	}
 	label{
 		display: inline;
 		font-size:18px;
@@ -13,13 +23,20 @@
 		font-size:18px;
 		line-height:2;
 		margin: 10px;
-		display: block !important;
+	}
+	input[name="commit"]{
+		margin-left:20px;
 	}
 	#user_username{
 		margin-left: 0;
 	}
-	.error>label{
+	label[class="error"]{
 		display: block;
+		margin-left:40px;
+		font-size: 16px;
 	}
 }
 
+.sign_in{
+	height:200px;
+}

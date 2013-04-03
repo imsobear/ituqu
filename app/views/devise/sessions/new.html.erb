@@ -1,6 +1,6 @@
-<div class="sign">
-	<h2>登录</h2>
-
+<% provide(:title, "途趣网 | 登录") %>
+<div class="sign  sign_in">
+	<p><i class="icon-user"></i> | <span class='title'>登 录</span></p>
 	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	<div>
 		<%= f.label '邮 箱：' %>
@@ -8,11 +8,12 @@
 	</div>
 	<div>
 		<%= f.label '密 码：' %>
-		<%= f.password_field :password, placeholder: '密码至少六位' %>
+		<%= f.password_field :password, class: 'required', minlength: '6',
+												 placeholder: '密码至少六位' %>
 	</div>
 	<div class="action">
 		<span><%= f.check_box :remember_me %> <%= f.label '记住我' %></span>
-		<span><%= f.submit "登录", class: "btn btn-primary btn-large" %></span>
+		<span><%= f.submit "登录", class: "btn btn-primary" %></span>
 	</div>
 	<% end %>
 </div>

@@ -1,4 +1,5 @@
-<% provide(:title, "途趣网 || #{user.username}'s journal") %>
+<% user = User.find(@journal.user_id) %>
+<% provide(:title, "途趣网 | #{user.username}'s journal") %>
 <div class='row journal_all'>
 	<div id="journal_pictures" class='span4'>
 		<% for pic in @pictures %>
@@ -8,7 +9,6 @@
 	<div id="journal_content" class='span8 offet4'>
 		<h1 class="title"><%= link_to @journal.title, @journal %></h1>
 		<div class="info">
-			<% user = User.find(@journal.user_id) %>
 			<%= @journal.updated_at %> by 
 			<%= link_to user.username, user %>
 			<% if current_user and current_user.has_role? :admin, @journal %>

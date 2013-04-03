@@ -1,4 +1,4 @@
-<% provide(:title, "途趣网 || #{@user.username}") %>
+<% provide(:title, "途趣网 | #{@user.username}") %>
 <div id='user_info'>
 	<%= link_to @user, class: 'brand avatar' do %>
 	<%= image_tag @user.avatar.url(:avatar) if @user.avatar?%>
