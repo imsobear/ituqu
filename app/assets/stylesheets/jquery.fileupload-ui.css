@@ -1,0 +1,106 @@
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 13, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  border-width: 0 0 100px 200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* line 33, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+
+/* line 36, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.files .progress {
+  width: 200px;
+}
+
+/* line 39, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.progress-animated .bar {
+  background: url(/assets/progressbar.gif) !important;
+  filter: none;
+}
+
+/* line 43, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-loading {
+  position: absolute;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  background: url(/assets/loading.gif) center no-repeat;
+  display: none;
+}
+
+/* line 51, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-processing .fileupload-loading {
+  display: block;
+}
+
+/* Fix for IE 6: */
+/* line 56, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+* html .fileinput-button {
+  line-height: 22px;
+  margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+/* line 62, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+* + html .fileinput-button {
+  margin: 1px 0 0 0;
+}
+
+@media (max-width: 480px) {
+  /* line 67, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .btn span {
+    display: none;
+  }
+
+  /* line 70, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .preview * {
+    width: 40px;
+  }
+
+  /* line 73, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .name * {
+    width: 80px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+
+  /* line 78, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .progress {
+    width: 20px;
+  }
+
+  /* line 81, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/jquery-fileupload-rails-0.4.1/vendor/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .delete {
+    width: 60px;
+  }
+}

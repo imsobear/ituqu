@@ -28,6 +28,8 @@ gem 'rolify'
 #gem 'mercury-rails'
 #分页
 gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
+#gem 'bootstrap-will_paginate'
 
 gem 'turbolinks'
 
