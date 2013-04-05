@@ -1,15 +1,13 @@
 /* home/index*/
 .journals{
-	margin:0;
-	overflow: hidden;
 	.journal_part{
 		background-color: white;
-		padding: 30px;
-		margin: 20px;	
+		margin: 20px auto;
 		#journal_picture{
+			padding:20px;
 		}
 		#journal_content{
-			margin-left:50px;
+			padding:20px;
 			.title{
 				margin-bottom: 10px;
 			}
@@ -22,13 +20,10 @@
 /*journal#show*/
 
 .journal_all{
-	margin: 20px;
+	margin: 20px auto;
 	#journal_content{
-		background-color:white;
 		padding:30px;
-	}
-	img{
-		margin: 0 10px 20px 10px;;
+		background-color:white;
 	}
 }
 

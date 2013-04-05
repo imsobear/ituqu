@@ -1,4 +1,4 @@
-<li class='row journal_part'>
+<li class='row-fluid journal_part'>
 	<div id="journal_picture" class='span4'>
 		<% if journal.pictures.first %>
 		<% cover_image = journal.pictures.first.image  %>
@@ -6,8 +6,8 @@
 		<% end %>
 	</div>
 	<div id="journal_content" class='span8'>
-		<h1 class="title"><%= link_to journal.title[0, 18]+'...', journal %></h1>
-		<p class="content"><%= raw journal.content[0, 500] %>...</p>
+		<h1 class="title"><%= link_to journal.title, journal %></h1>
+		<p class="content"><%= raw journal.content[0, 240] %>...</p>
 		<div class="info">
 			<% user = User.find(journal.user_id) %>
 			<%= journal.updated_at %> by 

@@ -1,12 +1,12 @@
 <% user = User.find(@journal.user_id) %>
 <% provide(:title, "途趣网 | #{user.username}'s journal") %>
-<div class='row journal_all'>
+<div class='row-fluid journal_all'>
 	<div id="journal_pictures" class='span4'>
 		<% for pic in @pictures %>
 		<%= image_tag pic.image.url %>
 		<% end %>
 	</div>
-	<div id="journal_content" class='span8 offet4'>
+	<div id="journal_content" class='span8'>
 		<h1 class="title"><%= link_to @journal.title, @journal %></h1>
 		<div class="info">
 			<%= @journal.updated_at %> by 

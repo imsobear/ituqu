@@ -1,8 +1,8 @@
 <%= form_for @journal.pictures.build, :html => { :multipart => true, :id => "fileupload"  } do |f| %>
 <div class="fileupload-buttonbar">
     <%= f.hidden_field :journal_token, value: @journal.token %>
-    <a class="fileinput-button">上传图片
-        <%= f.file_field :image, multiple: true, id: 'picture_image' %>
+    <a class="fileinput-button">
+        上传图片<%= f.file_field :image, multiple: true, id: 'picture_image' %>
     </a>
 </div>
 <div class="fileupload-loading"></div>
@@ -11,26 +11,19 @@
 </table>
 <% end %>
 
-<script>
-  var fileUploadErrors = {
-    maxFileSize: '图片太大了，压缩一下吧。',
-    minFileSize: 'File is too small',
-    acceptFileTypes: '不支持的格式。',
-    maxNumberOfFiles: '一次最能只能上传15张。',
-    uploadedBytes: 'Uploaded bytes exceed file size',
-    emptyResult: 'Empty file upload result'
-  };
-</script>
-
-<!-- The template to display files available for upload -->
+<!-- 上传过程中 -->
 <script id="template-upload" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-upload fade">
         {% if (file.error) { %}
-            <td class="error" colspan="2"><span class="label label-important">{%=locale.fileupload.error%}</span> {%=locale.fileupload.errors[file.error] || file.error%}</td>
+            <td class="error" colspan="2">
+                <span class="label label-important">Error</span>{%=file.error%}
+            </td>
         {% } else if (o.files.valid && !i) { %}
             <td>
-                <div class="progress progress-success progress-striped active"><div class="bar" style="width:0%;"></div></div>
+                <div class="progress progress-success progress-striped active">
+                    <div class="bar" style="width:0%;"></div>
+                </div>
             </td>
         {% } else { %}
             <td colspan="2"></td>
@@ -41,19 +34,17 @@
     </tr>
 {% } %}
 </script>
-<!-- The template to display files available for download -->
+
+<!--上传完成后-->
 <script id="template-download" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade">
         {% if (file.error) { %}
             <td class="error" colspan="2">
-                <span class="label label-important">{%=locale.fileupload.error%}
-                </span> {%=locale.fileupload.errors[file.error] || file.error%}
+                <span class="label label-important">Error</span>{%= file.error%}
             </td>
         {% } else { %}
-            <td class="preview">{% if (file.littlenail_url) { %}
-                <img src="{%=file.littlenail_url%}">
-            {% } %}</td>
+            <td class="preview"><img src="{%=file.littlenail_url%}"></td>
         {% } %}
         <td class="delete">
             <button data-url="{%=file.delete_url%}">
@@ -70,10 +61,7 @@
          $('#picture_image').attr('name', 'picture[image]');
         // Initialize the jQuery File Upload widget:
         $('#fileupload').fileupload();
-
-
         // set options here!
-
         $('#fileupload').fileupload('option', {
             autoUpload: true,
             maxFileSize: 2000000,
