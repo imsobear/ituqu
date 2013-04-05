@@ -20,16 +20,16 @@ gem "jquery-fileupload-rails", '~> 0.4.0'
 #第三方
 gem 'devise'
 #gem 'omniauth-weibo-oauth2'
+#分享
+gem "social-share-button"
 
 gem 'cancan'
 gem 'rolify'
 #富文本编辑器
-#gem 'rails_kindeditor'
-#gem 'mercury-rails'
+
 #分页
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
-#gem 'bootstrap-will_paginate'
 
 gem 'turbolinks'
 

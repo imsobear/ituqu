@@ -17,6 +17,7 @@
 			<%= link_to "编辑", edit_journal_path(journal) %>
 			<% link_to '删除', journal_path(journal), method: :delete %>
 			<% end %>
+			<%= social_share_button_tag(journal.title) %>
 		</div>
 	</div>
 </li>
