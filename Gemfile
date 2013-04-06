@@ -26,7 +26,7 @@ gem "social-share-button"
 gem 'cancan'
 gem 'rolify'
 #富文本编辑器
-gem "ckeditor"
+gem 'ckeditor_rails'
 
 #分页
 gem 'will_paginate', '~> 3.0'

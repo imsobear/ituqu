@@ -1,6 +1,5 @@
 .pagination{
-	float:right;
-	margin-right:50px;	
+text-align:center;
 }
 /* home/index*/
 .journals{
@@ -47,6 +46,7 @@
 		text-align: center;
 		.journal_title{
 			border: none;
+			border-radius: none;
 			font-size: 30px;
 			line-height: 30px;
 			width:600px;
@@ -55,8 +55,8 @@
 			text-align: center;
 			display: block;
 		}
-		.journal_text{
-
+		#cke_journal_content{
+			margin: 0 auto;
 		}
 		.journal_action{
 			margin-top: 20px;
