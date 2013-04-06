@@ -1,3 +1,4 @@
+!/public/uploads/journal_images/share
 *.rbc
 *.sassc
 .sass-cache
@@ -16,4 +17,3 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
-!/public/uploads/journal_images/share
