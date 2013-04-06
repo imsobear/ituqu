@@ -1,5 +1,3 @@
-!/public/uploads/journal_images/share
-*.rbc
 *.sassc
 .sass-cache
 capybara-*.html
