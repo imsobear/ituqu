@@ -1,0 +1,26 @@
+// Place all the styles related to the Me controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#me{
+	background: image-url("me-bg.png") center top repeat-y white;
+	#info{
+		height: 100%;
+		#my_info{
+			width:50%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			#my_img{
+				width:100px;
+				height:100px;
+				border-radius: 50px;
+				margin: 20px auto;
+			}
+		}
+		#my_skill{
+			width: 50%;
+			height: 100%;
+			display: inline-block;
+		}		
+	}
+}
