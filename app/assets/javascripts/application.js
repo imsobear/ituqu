@@ -4,7 +4,7 @@
 //= require jquery.validate
 //= require social-share-button
 //= require ckeditor-jquery
-//= require turbolinks
+// require turbolinks
 
 $(function(){
 	if($(".alert").html() != '')
