@@ -2,8 +2,12 @@
 <% provide(:title, "途趣网 | #{user.username}'s journal") %>
 <div class='row-fluid journal_all'>
 	<div id="journal_pictures" class='span4'>
-		<% for pic in @pictures %>
-		<%= image_tag pic.image.url %>
+		<% if @pictures == [] %>
+			<%= image_tag @journal.cover_image %>
+		<% else %>
+			<% for pic in @pictures %>
+			<%= image_tag pic.image.url %>
+			<% end %>
 		<% end %>
 	</div>
 	<div id="journal_content" class='span8'>

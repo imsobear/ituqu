@@ -4,7 +4,7 @@ class JournalsController < ApplicationController
 
   def show
   	@journal = Journal.find(params[:id])
-    @pictures = @journal.pictures.all 
+    @pictures = @journal.pictures.all
   end
 
   def new

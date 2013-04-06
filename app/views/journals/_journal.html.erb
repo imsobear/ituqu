@@ -1,9 +1,6 @@
 <li class='row-fluid journal_part'>
 	<div id="journal_picture" class='span4'>
-		<% if journal.pictures.first %>
-		<% cover_image = journal.pictures.first.image  %>
-		<%= link_to image_tag(cover_image.little.url), journal %>
-		<% end %>
+		<%= link_to image_tag(journal.cover_image), journal %>
 	</div>
 	<div id="journal_content" class='span8'>
 		<h1 class="title"><%= link_to journal.title, journal %></h1>

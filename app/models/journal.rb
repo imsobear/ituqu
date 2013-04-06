@@ -14,7 +14,7 @@
 class Journal < ActiveRecord::Base
 
 	#排序方式
-	default_scope order: "created_at DESC"
+	default_scope order: "updated_at DESC"
 	
 	attr_accessible :content, :title,:user_id, :token
 
@@ -34,4 +34,8 @@ class Journal < ActiveRecord::Base
 		end
 	end
 
+	#如果journal没有图片，就从share里随机选择一张
+	def cover_image
+		self.pictures.first ? self.pictures.first.image.little.url : "/uploads/journal_images/share/#{rand(11)}.jpg"  
+	end	
 end
