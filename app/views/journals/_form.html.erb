@@ -11,8 +11,9 @@
 <%= f.hidden_field :token %>
 <%= f.text_field :title, class: 'journal_title required', placeholder: "标题", 
 								 autofocus: true %>
-<%= f.text_area :content, class: 'journal_text required', minlength: 5, 
-								placeholder: '正文（至少五个字符）'  %>
+<%= f.cktext_area :content, class: 'journal_text', uiColor: '#EFEFEE', 
+									toolbar: 'Basic', height: '400px' %>
+
 <div class="journal_action">
 	<%= f.submit "发布", class: 'btn btn-primary btn-large' %>
 </div>

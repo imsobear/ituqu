@@ -42,6 +42,9 @@ GEM
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
+    ckeditor (4.0.3)
+      mime-types
+      orm_adapter
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -165,6 +168,7 @@ DEPENDENCIES
   binding_of_caller
   cancan
   carrierwave
+  ckeditor
   coffee-rails (~> 3.2.1)
   devise
   jquery-fileupload-rails (~> 0.4.0)

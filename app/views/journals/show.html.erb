@@ -11,11 +11,11 @@
 		<div class="info">
 			<%= @journal.updated_at %> by 
 			<%= link_to user.username, user %>
-			<%= social_share_button_tag(journal.title) %>
 			<% if current_user and current_user.has_role? :admin, @journal %>
 			<%= link_to "编辑", edit_journal_path(@journal) %>
 			<%= link_to '删除', journal_path(@journal), method: :delete %>
 			<% end %>
+			<%= social_share_button_tag(@journal.title) %>
 		</div>
 		<hr>
 		<p class="content"><%= raw @journal.content %></p>
