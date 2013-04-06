@@ -1,8 +1,7 @@
-Youji::Application.routes.draw do
+Youji::Application.routes.draw do	
+	resources :pictures, :only => [:index, :create, :destroy]
 	
-	resources :pictures, :only => [:create, :destroy]
-	
-	resources :journals 
+	resources :journals , except: :index
 
 	devise_for :users
 

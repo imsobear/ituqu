@@ -1,22 +1,16 @@
 /*user#show*/
-#back_home{
-	position:fixed;
-	top:0;
-	z-index:1031;
-	padding:4px;
-	background-color:#57c5c7;
-	color:white;
-}
-#user_info{
-	background: white;
-	padding:20px;
-	.avatar img{
-		border-radius: 50px;
-		margin: 0 50px 0 100px;
+.user{
+	#user_info{
+		background: white;
+		padding:20px;
+		.avatar img{
+			border-radius: 50px;
+			margin: 0 50px 0 100px;
+		}
 	}
-
-}
-
-#user_journals{
-	margin-top: 80px;
+	#user_journals{
+		.journal_part{
+			margin-top:0;
+		}
+	}
 }

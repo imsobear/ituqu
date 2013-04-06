@@ -1,16 +1,15 @@
 <% provide(:title, "途趣网 | #{@user.username}") %>
-<div id='user_info'>
-	<%= link_to @user, class: 'brand avatar' do %>
-	<%= image_tag @user.avatar.url(:avatar) if @user.avatar?%>
-	<% end %>
-	<h1><%= @user.username %></h1>
-	<p><%= @user.email %></p>
-	<% if @user == current_user %>
-	<%= link_to "编辑", edit_user_path(@user)%>
-	<% end %>
-</div>
-<div id="user_journals">
-	<ul class="journals">
-		<%= render @journals %>
-	</ul>
+<div class="user row-fluid">
+	<div id='user_info' class="span4">
+		<%= link_to @user, class: 'brand avatar' do %>
+		<%= image_tag @user.avatar.url(:avatar) if @user.avatar?%>
+		<% end %>
+		<h1><%= @user.username %></h1>
+		<p><%= @user.email %></p>
+	</div>
+	<div id="user_journals" class="span8">
+		<ul class="journals">
+			<%= render @journals %>
+		</ul>
+	</div>
 </div>

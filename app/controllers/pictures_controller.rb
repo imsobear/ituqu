@@ -1,5 +1,9 @@
 class PicturesController < ApplicationController
 
+  def index
+    
+  end
+  
   def create    
     p_attr = params[:picture]
     @picture = Picture.new(p_attr)

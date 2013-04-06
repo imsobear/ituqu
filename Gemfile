@@ -32,6 +32,8 @@ gem 'ckeditor_rails'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 
+gem 'best_in_place'
+
 gem 'turbolinks'
 
 group :development do
