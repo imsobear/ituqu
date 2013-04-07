@@ -1,18 +1,75 @@
 <html>
 <head>
 	<title>About me</title>
-	<%= stylesheet_link_tag    "me" %>
 	<%= stylesheet_link_tag    "bootstrap_and_overrides" %>
+	<%= stylesheet_link_tag    "me" %>
 </head>
 <body id='me'>
 	<div id="info" class="row-fluid">
 		<div id="my_info">
 			<div id="main_info">
-				<img id="my_img" src="me.jpg" title="me">	
+				<a href="/me"><img id="my_img" src="me.jpg" title="me"></a>
+				<ul>
+					<li>姓名：<span>刘雄</span></li>
+					<li>毕业院校：<span>西安电子科技大学 2010级</span></li>
+					<li>专业：<span>电子科学与技术</span></li>
+					<li>出生年月：<span>1991.07</span></li>
+					<li>籍贯：<span>陕西渭南</span></li>
+					<li>兴趣：<span>读书，篮球，历史</span></li>
+					<li>Tel：<span>18392622010</span></li>
+					<li>Email：<span><a href="mailto:liuxiongsky@163.com" target='blank'>liuxiongsky@163.com</a></span></li>
+					<li>Blog：<span><a href="http://tomayday.github.io/" target='blank'>It's Me</a></span></li>
+					<li>Github：<span><a href="https://github.com/tomayday" target='blank'>tomayday</a></span></li>
+				</ul>
 			</div>
-			
 		</div>
-		<div id="my_skill"></div>
+		<div id="my_skill">
+			<section>
+				<h3>项目经验：</h3>
+				<ol>
+					<li>
+						<h5>大学生国家创业计划：途趣网</h5>
+						<p>面向驴友的社交平台...<a href="https://docs.google.com/file/d/0ByRqJ1TklT-7M1NsUjBINGxOUVU/edit?usp=sharing" target="blank">more</a></p>
+						<p><a href="http://tuqu365.com/">途趣网主页</a> 
+							| 目前项目正在开发中，功能很单一，网站进一步的发展也还在思考中，
+							主要是要打造网站的特色功能。</p>
+					</li>
+					<li>
+						<h5>星火杯：智能控制小船</h5>
+						<p>
+							我主要负责的部分是实现电脑对小船的控制，以及将小船上摄像头
+							（搭载在单片机上）通过无线传回的数据转码为图片并显示出来，通过C#实现的。
+						</p>
+					</li>	
+					<li>
+						<h5>图像处理</h5>
+						<p>
+							大一时跟着实验室的学长学习过图片处理方面的一些知识，其中包括
+							灰度化，反转，镜面，阈值分割等算法的实现。
+						</p>
+					</li>	
+				</ol>
+			</section>
+			<section>
+				<h3>编程技能：</h3>
+				<ul>
+					<li>掌握rails，有项目开发经验（上文所说的
+						<a href="http://tuqu365.com/">途趣网</a>）。</li>
+					<li>熟悉ruby,以及元编程的知识。</li>
+					<li>掌握html,css,js,jQuery,bootstrap等前端知识，了解sass,coffeescript语言。</li>
+					<li>长期在ubuntu下做开发，掌握git,vim等工具。</li>
+					<li>大一时学习C#,并做过一些应用。了解python。</li>
+				</ul>					
+			</section>
+			<section>
+				<h3>英语技能：</h3>
+				<ul>
+					<li>CET-4: 457分。</li>
+					<li>CET-6: 410分。</li>
+					<li>在Rails的学习过程中，较好的锻炼了阅读英文文档的能力。</li>
+				</ul>
+			</section>
+		</div>
 	</div>
 </body>
 </html>

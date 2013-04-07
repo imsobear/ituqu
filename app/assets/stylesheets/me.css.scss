@@ -9,18 +9,27 @@
 			width:50%;
 			height: 100%;
 			float: left;
-			text-align: center;
+			#main_info{
+				margin: 80px 150px;
+			}
 			#my_img{
 				width:100px;
 				height:100px;
 				border-radius: 50px;
-				margin: 20px auto;
+				margin: auto 0 30px 50px;
+			}
+			ul, li{
+				list-style: none;
+				margin-top:10px;
 			}
 		}
 		#my_skill{
 			width: 50%;
 			height: 100%;
 			display: inline-block;
+			section{
+				margin: 20px;
+			}
 		}		
 	}
 }
