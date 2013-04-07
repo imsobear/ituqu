@@ -6,9 +6,8 @@
 		<h1 class="title"><%= link_to journal.title, journal %></h1>
 		<p class="content"><%= raw journal.content[0, 240] %>...</p>
 		<div class="info">
-			<% user = User.find(journal.user_id) %>
 			<%= journal.updated_at %> by 
-			<%= link_to user.username, user %>
+			<%= link_to journal.user.username, journal.user %>
 			<%= link_to "阅读", journal_path(journal) %>
 			<% if current_user and current_user.has_role? :admin, journal %>
 			<%= link_to "编辑", edit_journal_path(journal) %>
