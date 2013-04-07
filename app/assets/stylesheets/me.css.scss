@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #me{
-	background: image-url("me-bg.png") center top repeat-y white;
+	background: url("me-bg.png") center top repeat-y white;
 	#info{
 		height: 100%;
 		#my_info{
