@@ -19,16 +19,17 @@
   
 ###Do it with me:
 ```
-fork `ituqu`
+点击页面右上方fork `ituqu`
 git clone https://github.com/YOUR_USERNAME/ituqu/`
 git remote add upstream https://github.com/tomayday/ituqu/`  #添加跟原始资源库关联
 #开始开发
-git commit  -m '这里是备注'`
-git push origin master`  #提交push到自己项目的分支库
-git fetch upstream`  #更新远程代码到本地
-git merge upstream/master`  #将自己的代码合并到自己的项目分支库
-pull request`
+git commit  -m '～～～'`
+git push origin master`  #提交push到你自己项目的分支库
+git fetch upstream  #更新远程代码到本地
+git merge upstream/master   #将代码合并到自己的项目分支库
+点击你页面上的pull request
 ```
+[了解更多](https://help.github.com/articles/fork-a-repo)
 
 
 
