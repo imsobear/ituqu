@@ -29,7 +29,7 @@ git fetch upstream  #更新远程代码到本地
 git merge upstream/master   #将代码合并到自己的项目分支库
 点击你页面上的pull request
 ```
-[了解更多](https://help.github.com/articles/fork-a-repo)
+关于fork, [了解更多](https://help.github.com/articles/fork-a-repo)
 
 
 
