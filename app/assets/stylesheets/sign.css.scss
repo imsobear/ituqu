@@ -1,16 +1,16 @@
-
 .sign{
 	margin: 50px auto;
 	width:400px;
 	height: 300px;
-	padding:50px;
+	padding:40px 40px 100px 40px;
 	text-align:center;
 	background-color:white;
 	p{
 		font-size: 18px;
+		margin: 5px;
 	}
 	form{
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	label{
 		display: inline;
@@ -24,8 +24,9 @@
 		line-height:2;
 		margin: 10px;
 	}
-	input[name="commit"]{
-		margin-left:20px;
+	.btn-primary{
+		width: 240px;
+		margin-left: 60px;
 	}
 	#user_username{
 		margin-left: 0;

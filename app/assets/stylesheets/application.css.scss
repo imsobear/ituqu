@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap_and_overrides
+ *= require flat-ui
  *= require jquery.fileupload-ui
  *= require social-share-button
  *= require sign
@@ -18,9 +19,9 @@
 
  body{
  	padding-top: 85px;
- 	font-family: sans-serif;
- 	font-size: 14px;
  	background-color: #EFEFEE;
+ 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+ 	font-size: 14px;
  }
  label{
  	display: inline;
