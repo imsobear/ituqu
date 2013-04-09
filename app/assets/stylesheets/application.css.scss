@@ -87,6 +87,15 @@
  }
  .alert{
  	float: right;
+ 	margin-right:50px;
+ 	border:none;
+ 	border-radius: 0;
+ 	border-left: 2px solid #F74716; 
+ 	background-color:white;
+ 	color: black;
+ }
+ .field_with_errors{
+ 	display: inline;
  }
  .table-striped{
   float:right;

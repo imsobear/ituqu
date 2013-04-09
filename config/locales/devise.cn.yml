@@ -4,10 +4,10 @@ cn:
       not_found: "没有找到该用户"
       already_confirmed: "已经确认"
       not_locked: "没有锁定"
+      expired: "has expired, please request a new one"
       not_saved:
         one: "有 1 个错误发生导致「%{resource}」无法被保存。"
         other: "有 %{count} 个错误发生导致「%{resource}」无法被保存。"
-
   devise:
     failure:
       unauthenticated: '继续操作前请注册或者登录.'
@@ -17,6 +17,8 @@ cn:
       invalid_token: '认证码无效.'
       timeout: '您已登录超时，请重新登录.'
       inactive: '您还没有激活帐户.'
+      user:
+        not_found_in_database: '该用户名还未注册.'
     sessions:
       signed_in: '登录成功.'
       signed_out: '退出成功.'
