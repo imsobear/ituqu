@@ -2,7 +2,7 @@
 =====
 
 ###what's this?
-途趣网是一个为驴友提供服务的网站，目前还没有什么特色功能，[途趣网](http://www.tuqu365.com/)。
+途趣网是一个为驴友提供服务的网站，目前只是基础功能，还没有什么特色功能，[途趣网](http://www.tuqu365.com/)。
 
 ###网站的构想：
 基于地点的信息分享服务：
@@ -18,15 +18,17 @@
   4. 添加地图服务。
   
 ###Do it with me:
-  1. fork `ituqu`
-  2. `git clone https://github.com/YOUR_USERNAME/ituqu/`
-  3. `git remote add upstream https://github.com/tomayday/ituqu/`  #添加跟原始资源库关联
-  4. `git commit  -m '这里是备注'`
-  5. `git push origin master`  #提交push到自己项目的分支库
-  6. `git fetch upstream`  #更新远程代码到本地
-  7. `git merge upstream/master`  #将自己的代码合并到自己的项目分支库
-  8. `pull request`
-
+```
+fork `ituqu`
+git clone https://github.com/YOUR_USERNAME/ituqu/`
+git remote add upstream https://github.com/tomayday/ituqu/`  #添加跟原始资源库关联
+#开始开发
+git commit  -m '这里是备注'`
+git push origin master`  #提交push到自己项目的分支库
+git fetch upstream`  #更新远程代码到本地
+git merge upstream/master`  #将自己的代码合并到自己的项目分支库
+pull request`
+```
 
 
 
