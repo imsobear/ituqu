@@ -31,5 +31,9 @@ git merge upstream/master   #将代码合并到自己的项目分支库
 ```
 关于fork, [了解更多](https://help.github.com/articles/fork-a-repo)
 
+#License
+--------
+[MIT license](http://opensource.org/licenses/MIT)
+
 
 
