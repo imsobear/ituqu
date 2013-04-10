@@ -24,3 +24,6 @@ cn:
             password:
               blank: 不能为空
               confirmation: 和确认密码需一致
+  will_paginate:
+    previous_label: 上一页
+    next_label: 下一页
