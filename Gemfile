@@ -32,9 +32,11 @@ gem 'ckeditor_rails'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 
-gem 'best_in_place'
+#gem 'best_in_place'
 
 gem 'turbolinks'
+#评论
+gem 'acts_as_commentable_with_threading'
 
 group :development do
   gem 'better_errors'

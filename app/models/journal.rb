@@ -12,6 +12,7 @@
 #
 
 class Journal < ActiveRecord::Base
+	acts_as_commentable
 
 	#排序方式
 	default_scope order: "updated_at DESC"
