@@ -37,7 +37,6 @@
  	color: #4bc3c1;
  	text-decoration: none;
  }
- 
  /*header*/
  header .navbar-inner{
  	height: 40px;
@@ -52,11 +51,15 @@
  		left:100px;
  		li{
  			font-size: 18px;
- 			letter-spacing: 3px;
  			margin-left:30px;
+ 		}
+ 		#sign_in{
+ 			display: inline;
+ 			margin-top: -20px;
  		}
  	}
  }
+
 
  footer{
  	margin-top: 20px;

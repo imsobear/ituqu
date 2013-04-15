@@ -8,11 +8,12 @@
         <li><%= link_to '首页', root_path %></li>
         <% if signed_in? %>
         <li><%= link_to '分享', new_journal_path %></li>
-        <li><%= link_to '我的主页', current_user %></li>    
+        <li><%= link_to '我的主页', current_user %></li>            
         <% else %>
-        <li><%= link_to image_tag('sina_mid.png'), '/auth/weibo/', id: 'sina_pic' %></li>
+        <li id='sign_in'><%= link_to image_tag('sina_mid.png'), '/auth/weibo/',
+                                     title: "用新浪微博帐号登录"%> </li>  
         <% end %>
-      </ul>
+      </ul>                           
     </div>
   </div>
 </header>
