@@ -4,8 +4,20 @@
 		background: white;
 		padding:20px;
 		.avatar img{
-			border-radius: 50px;
-			margin: 0 50px 0 100px;
+			width: 80px;
+			border-radius: 40px;
+			display: inline-block;
+		}
+		h1{
+			display: inline-block;
+			font-size: 22px;
+			margin-left:20px;
+		}
+		p{
+			margin-top: 20px;
+		}
+		i{
+			margin-right: 5px;
 		}
 	}
 	#user_journals{

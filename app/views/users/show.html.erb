@@ -2,11 +2,17 @@
 <div class="user row-fluid">
 	<div id='user_info' class="span4">
 		<%= link_to @user, class: 'brand avatar' do %>
-		<%= image_tag @user.avatar if @user.avatar?%>
+		<%= image_tag @user.avatar, title: @user.name, id: 'avatar' %>
 		<% end %>
 		<h1><%= @user.name %></h1>
-		<p><%= @user.description %></p>
-		<p><%= @user.location %></p>
+		<p><i class="icon-bookmark"></i>
+			<span><%= link_to_if(@user.weibo, '关注我', @user.weibo, title: '关注我', 
+													 _target: 'blank')%></span>
+			<span><%= link_to_if(@user.blog, '我的博客', @user.blog, title: '我的博客',
+													 _target: 'blank')%></span>
+		</p>
+		<p><i class="icon-arrow-right"></i><%= @user.description %></p>
+		<p><i class='icon-map-marker'></i> <%= @user.location %></p>
 	</div>
 	<div id="user_journals" class="span8">
 		<ul class="journals">

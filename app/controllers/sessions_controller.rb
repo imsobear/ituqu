@@ -23,7 +23,8 @@ class SessionsController < ApplicationController
 		user_info = info['info']
 		user = User.create(uid: info['uid'], name: user_info['nickname'], 
 										location: user_info['location'], avatar: user_info['image'],
-										description: user_info['description'], weibo: user_info['weibo'])
+										description: user_info['description'], weibo: user_info['weibo'],
+										blog: user_info['blog'])
 	end
 
 end
