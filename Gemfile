@@ -11,15 +11,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
-#gem 'bootstrap-sass'
 gem 'twitter-bootstrap-rails'
 #上传图片
 gem 'mini_magick'
 gem 'carrierwave'
 gem "jquery-fileupload-rails", '~> 0.4.0'
 #第三方
-gem 'devise'
-#gem 'omniauth-weibo-oauth2'
+gem 'omniauth'
+gem 'omniauth-weibo-oauth2'
 #分享
 gem "social-share-button"
 

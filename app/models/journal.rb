@@ -1,4 +1,3 @@
-#coding:utf-8
 # == Schema Information
 #
 # Table name: journals
@@ -9,10 +8,11 @@
 #  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  token      :string(255)
 #
 
+#coding:utf-8
 class Journal < ActiveRecord::Base
-	acts_as_commentable
 
 	#排序方式
 	default_scope order: "updated_at DESC"
@@ -21,12 +21,6 @@ class Journal < ActiveRecord::Base
 
 	has_many :pictures, :dependent => :destroy
 	belongs_to :user
-
-	# validates :title, presence: true, 
-	# 					length: {minimum: 1, message: "标题至少有一个字"}
-	validates :content, presence: true, 
-	length: {minimum: 5, message: "Too short"}
-
 
 	def generate_token
 		self.token = loop do
@@ -39,4 +33,5 @@ class Journal < ActiveRecord::Base
 	def cover_image
 		self.pictures.first ? self.pictures.first.image.little.url : "/uploads/journal_images/share/#{rand(11)}.jpg"  
 	end	
+	
 end

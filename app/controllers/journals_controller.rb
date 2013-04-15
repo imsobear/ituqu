@@ -1,7 +1,6 @@
 #coding:utf-8
 class JournalsController < ApplicationController
-  before_filter :authenticate_user!, except: :show
-
+  
   def show
   	@journal = Journal.find(params[:id])
     @pictures = @journal.pictures.all

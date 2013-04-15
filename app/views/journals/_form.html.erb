@@ -1,22 +1,14 @@
 <%= form_for @journal, :html => { multipart: true, class: 'row journal_form' } do |f| %>
-<% if @journal.errors.any? %>
-<div id="errors">
-	<ul>
-		<% @journal.errors.full_messages.each do |msg| %>
-		<li><%= msg %></li>
-		<% end %>
-	</ul>
-</div>
-<% end %>
 <%= f.hidden_field :token %>
+
 <%= f.text_field :title, class: 'journal_title required', placeholder: "标题", 
-								 autofocus: true %>
-<%= f.text_area :content, class: 'ckeditor journal_text', name: 'writefiled' %>
+autofocus: true %>
+<%= f.text_area :content, class: 'ckeditor journal_text' %>
 
 <div class="journal_action">
 	<%= f.submit "发布", class: 'btn btn-primary btn-large' %>
 </div>
 <% end %>
 <script type="text/javascript">
-CKEDITOR.replace( 'writefiled' );
+// CKEDITOR.replace( 'writefiled' );
 </script>

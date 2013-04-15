@@ -3,8 +3,21 @@ class ApplicationController < ActionController::Base
 	
 	WillPaginate.per_page = 5
 
+	protected
 
-	def after_sign_out_path_for(resource_or_scope)
-		request.referrer
-	end
+  def current_user
+    @current_user ||= User.find_by_id(session[:user_id])
+  end
+
+  def signed_in?
+    !!current_user
+  end
+
+  helper_method :current_user, :signed_in?
+
+  def current_user=(user)
+    @current_user = user
+    session[:user_id] = user.id
+  end
+
 end

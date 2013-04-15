@@ -10,8 +10,7 @@
         <li><%= link_to '我的主页', current_user %></li>
         <li><%= link_to '退出', destroy_user_session_path, :method => :delete %></li>
         <% else %>
-        <li><%= link_to('登录', new_user_session_path) %></li>
-        <li><%= link_to('注册', new_user_registration_path) %></li> 
+        <li><%= link_to "sign in with weibo", '/auth/weibo/' %></li>
         <% end %>
       </ul>
     </div>

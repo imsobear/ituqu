@@ -1,10 +1,10 @@
-Youji::Application.routes.draw do	
+Youji::Application.routes.draw do
+
+	match '/auth/:provider/callback', to: 'sessions#create'	
 
 	resources :pictures, :only => [:index, :create, :destroy]
 	
 	resources :journals , except: :index
-
-	devise_for :users
 
 	resources :users
 
