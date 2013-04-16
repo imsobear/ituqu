@@ -2,12 +2,7 @@
 class SessionsController < ApplicationController
 	
 	def create
-		user =  User.find_by_uid(info['uid']) || false
-		#第一次认证
-		unless user
-			#保存用户
-			create_user()
-		end
+		user =  User.find_by_uid(info['uid']) || create_user()
 
 		self.current_user = user
 		redirect_to root_path
@@ -30,9 +25,9 @@ class SessionsController < ApplicationController
 		user_info = info['info']
 		user = User.create(uid: info['uid'], name: user_info['nickname'], 
 										location: user_info['location'], avatar: user_info['image'],
-										description: user_info['description'], weibo: user_info['weibo'],
-										blog: user_info['blog'])
-		return user
+										description: user_info['description'], 
+										weibo: user_info['urls']['Weibo'],
+										blog: user_info['urls']['Blog'])
 	end
 
 
