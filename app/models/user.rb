@@ -19,8 +19,8 @@ class User < ActiveRecord::Base
   rolify
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :uid, :email, :location, :avatar, :description, :weibo，
-                  :blog
+  attr_accessible :name, :uid, :email, :location, :avatar, :description, 
+  								:weibo,:blog
 
   has_many :journals
 

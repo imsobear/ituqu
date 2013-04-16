@@ -1,6 +1,7 @@
 Youji::Application.routes.draw do
 
-	resources :sessions, :only => [:create]
+	resources :sessions, :only => [:create, :destroy]
+
 	match '/auth/:provider/callback', to: 'sessions#create' 	
 
 	resources :pictures, :only => [:index, :create, :destroy]

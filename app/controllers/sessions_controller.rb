@@ -13,6 +13,13 @@ class SessionsController < ApplicationController
 		redirect_to root_path
 	end
 
+
+	def destroy
+		current_user = nil
+    session[:user_id] = nil
+    redirect_to root_path
+	end
+
 	private
 
 	def info
@@ -25,6 +32,8 @@ class SessionsController < ApplicationController
 										location: user_info['location'], avatar: user_info['image'],
 										description: user_info['description'], weibo: user_info['weibo'],
 										blog: user_info['blog'])
+		return user
 	end
+
 
 end
