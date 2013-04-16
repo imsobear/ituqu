@@ -9,11 +9,11 @@
         <% if signed_in? %>
         <li><%= link_to '分享', new_journal_path %></li>
         <li><%= link_to '我的主页', current_user %></li>
-        <li><%= link_to '退出', session_path(current_user), method: :delete  %></li>            
+        <li><%= link_to '退出', session_path(current_user.id), method: :delete %></li>
         <% else %>
         <li id='sign_in'>
           <%= link_to image_tag('sina_mid.png'), '/auth/weibo/',
-          title: "用新浪微博帐号登录"%> 
+                      title: "用新浪微博帐号登录"%> 
         </li>  
         <% end %>
       </ul>
