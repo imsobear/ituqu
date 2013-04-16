@@ -16,6 +16,7 @@
  *= require user
  *= require journals
  *= require gmaps
+ * require sprites
  */
 
  body{
@@ -47,6 +48,7 @@
  	.brand{
  		font: 30px bold !important;
  		padding: 0 20px;
+ 		max-height:48px;
  	}
  	.nav{
  		left:100px;

@@ -3,7 +3,7 @@
 <head>
 	<title><%= yield(:title) %></title>
 	<meta property="wb:webmaster" content="d0917bd059a3cbb6" />
-	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<%= javascript_include_tag "application" %>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= csrf_meta_tags %>
 </head>
@@ -14,6 +14,4 @@
 	</div>
 	<%= render 'layouts/footer' %>
 </body>
-
-<%= javascript_include_tag "application" %>
 </html>

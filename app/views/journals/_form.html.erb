@@ -3,11 +3,11 @@
 
 <%= f.text_field :title, class: 'journal_title required', placeholder: "标题", 
 autofocus: true %>
-<%= f.text_area :content, class: 'ckeditor journal_text required' %>
+<%= f.text_area :content, class: 'ckeditor journal_text required', id: "journal_input" %>
 <div class="journal_action">
 	<%= f.submit "发布", class: 'btn btn-primary btn-large' %>
 </div>
 <% end %>
 <script type="text/javascript">
-// CKEDITOR.replace( 'writefiled' );
+
 </script>
