@@ -3,13 +3,14 @@
 	<div id='write_content' class="span7">
 		<%= render 'journals/form' %>
 	</div>
-	<div id='upload_picture' class="span3">
+	<div id='upload_picture' class="span5">
+		<%= render 'gmaps'%>
 		<%= render 'pictures/form' %>
 	</div>
 </div>
-
+<%= debug @journal %>
 <script>
 $(function(){
-		$(".journal_form").validate();
+	$(".journal_form").validate();
 })
 </script>

@@ -1,5 +1,9 @@
 #coding:utf-8
 class JournalsController < ApplicationController
+
+  def index
+    
+  end
   
   def show
   	@journal = Journal.find(params[:id])

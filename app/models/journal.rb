@@ -17,7 +17,7 @@ class Journal < ActiveRecord::Base
 	#排序方式
 	default_scope order: "updated_at DESC"
 	
-	attr_accessible :content, :title,:user_id, :token
+	attr_accessible :content, :title,:user_id, :token, :location
 
 	has_many :pictures, :dependent => :destroy
 	belongs_to :user

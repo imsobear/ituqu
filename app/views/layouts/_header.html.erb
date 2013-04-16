@@ -2,18 +2,20 @@
   <div class="navbar-inner">
     <div class="container">
       <%= link_to root_path, class: "brand" do %>
-      <i class='icon-home'></i> | 途 趣 <small>beta</small>
+      <i class='icon-home'></i> | 途趣 <small>beta</small>
       <% end %>
-      <ul class="nav">
+      <ul class='nav'>
         <li><%= link_to '首页', root_path %></li>
         <% if signed_in? %>
         <li><%= link_to '分享', new_journal_path %></li>
         <li><%= link_to '我的主页', current_user %></li>            
         <% else %>
-        <li id='sign_in'><%= link_to image_tag('sina_mid.png'), '/auth/weibo/',
-                                     title: "用新浪微博帐号登录"%> </li>  
+        <li id='sign_in'>
+          <%= link_to image_tag('sina_mid.png'), '/auth/weibo/',
+          title: "用新浪微博帐号登录"%> 
+        </li>  
         <% end %>
-      </ul>                           
+      </ul>
     </div>
   </div>
 </header>

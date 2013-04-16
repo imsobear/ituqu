@@ -1,10 +1,11 @@
 Youji::Application.routes.draw do
 
-	match '/auth/:provider/callback', to: 'sessions#create'	
+	resources :sessions, :only => [:create]
+	match '/auth/:provider/callback', to: 'sessions#create' 	
 
 	resources :pictures, :only => [:index, :create, :destroy]
 	
-	resources :journals , except: :index
+	resources :journals
 
 	resources :users
 

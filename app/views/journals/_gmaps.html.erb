@@ -1,0 +1,37 @@
+<div class="gmaps">
+	<form method="post" id="geocoding_form">
+		<label for="address">地点:</label>
+		<div class="input">
+			<input type="text" id="address" name="address" />
+			<input type="submit" class="btn" value="Search" />
+		</div>
+	</form>
+	<div id="map"></div>
+</div>
+<%= javascript_include_tag "gmaps_api", "gmaps", :media => "all" %>
+<script type="text/javascript">
+var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        el: '#map',
+        lat: -12.043333,
+        lng: -77.028333
+      });
+      $('#geocoding_form').submit(function(e){
+        e.preventDefault();
+        GMaps.geocode({
+          address: $('#address').val().trim(),
+          callback: function(results, status){
+            if(status=='OK'){     
+              var latlng = results[0].geometry.location;
+              map.setCenter(latlng.lat(), latlng.lng());
+              map.addMarker({
+                lat: latlng.lat(),
+                lng: latlng.lng()
+              });
+            }
+          }
+        });
+      });
+    });
+</script>

@@ -1,3 +1,3 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :weibo, '4129056994', '62d85e3022c00b3b8f458a0e72c38a10'
+  provider :weibo, '2673549799', 'ab2d66165dd161bd7b00a1fb5b4c65d9'
 end
