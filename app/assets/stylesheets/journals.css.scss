@@ -1,5 +1,5 @@
 .pagination{
-text-align:center;
+	text-align:center;
 }
 /* home/index*/
 .journals{
@@ -32,12 +32,19 @@ text-align:center;
 /*journal#new&edit*/
 #write_journal{
 	#upload_picture{
+		padding-bottom:20px;
 		background-color:white;
-		.fileinput-button{
+		min-height:100px;
+		border-bottom: 1px solid;
+		.fileupload-buttonbar{
+			width:150px;
+			height:20px;
+			margin: 10px auto;
 			font-size: 2em;
-			line-height: 30px;
 			color: #E1704B;
-			padding: 20px 30%;
+		}
+		.files{
+			margin: 5px 10px;
 		}
 	}
 	#write_content{
@@ -53,7 +60,7 @@ text-align:center;
 			text-align: center;
 			display: block;
 		}
-		#cke_journal_content{
+		#cke_journal_input{
 			margin: 0 auto;
 		}
 		.journal_action{

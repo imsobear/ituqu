@@ -4,17 +4,15 @@
     <a class="fileinput-button">
         上传图片<%= f.file_field :image, multiple: true, id: 'picture_image' %>
     </a>
-</div>
+</div><br/>
 <div class="fileupload-loading"></div>
-<table class="table table-striped">
-    <tbody class="files"></tbody>
-</table>
+<div class="files"></div>
 <% end %>
 
 <!-- 上传过程中 -->
 <script id="template-upload" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-upload fade">
+    <span class="template-upload fade">
         {% if (file.error) { %}
             <td class="error" colspan="2">
                 <span class="label label-important">Error</span>{%=file.error%}
@@ -31,27 +29,22 @@
         <td class="cancel">{% if (!i) { %}
             <button class="btn btn-warning">取消</button>
         {% } %}</td>
-    </tr>
+    </span>
 {% } %}
 </script>
 
 <!--上传完成后-->
 <script id="template-download" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-download fade">
+    <span class="template-download fade">
         {% if (file.error) { %}
-            <td class="error" colspan="2">
+            <span class="error" colspan="2">
                 <span class="label label-important">Error</span>{%= file.error%}
-            </td>
+            </span>
         {% } else { %}
-            <td class="preview"><img src="{%=file.littlenail_url%}"></td>
+            <span class="preview"><img src="{%=file.littlenail_url%}"></span>
         {% } %}
-        <td class="delete">
-            <button data-url="{%=file.delete_url%}">
-                <i class='icon-remove'></i>
-            </button>
-        </td>
-    </tr>
+    </span>
 {% } %}
 </script>
 

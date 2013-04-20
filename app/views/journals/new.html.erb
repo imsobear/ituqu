@@ -2,7 +2,6 @@
 <div id='write_journal' class="row-fluid">
 	<div id='upload_picture' class="span5">
 		<%= render 'pictures/form' %>
-		<%= render 'gmaps'%>
 	</div>
 	<div id='write_content' class="span7">
 		<%= render 'journals/form' %>
@@ -12,4 +11,5 @@
 <script>
 $(function(){
 	$(".journal_form").validate();
-	</script>
+})
+</script>

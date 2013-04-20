@@ -4,7 +4,4 @@
 //= require jquery-fileupload
 //= require jquery.validate
 //= require social-share-button
-//= require gmaps_api
-//= require gmaps
 //= require ckeditor-jquery
-//= require ckeditor/config
